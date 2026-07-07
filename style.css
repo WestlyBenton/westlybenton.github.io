@@ -1,0 +1,160 @@
+:root {
+  --bg: #0d1117;
+  --bg-card: #161b22;
+  --border: #30363d;
+  --text: #c9d1d9;
+  --text-dim: #8b949e;
+  --accent: #3fb950;
+  --accent-dim: #2ea043;
+  --link: #58a6ff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+.hero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 72px 24px 48px;
+  border-bottom: 1px solid var(--border);
+}
+
+.prompt {
+  font-family: Consolas, "Courier New", monospace;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  letter-spacing: -0.5px;
+}
+
+.tagline {
+  color: var(--accent);
+  font-family: Consolas, "Courier New", monospace;
+  margin-top: 8px;
+  font-size: 1.05rem;
+}
+
+.meta { color: var(--text-dim); margin-top: 6px; }
+
+.hero nav { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 18px; }
+
+.hero nav a {
+  color: var(--link);
+  text-decoration: none;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.95rem;
+}
+
+.hero nav a:hover { text-decoration: underline; }
+
+main { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+section { padding: 48px 0 8px; }
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-family: Consolas, "Courier New", monospace;
+}
+
+.hash { color: var(--accent); }
+
+section > p { margin-bottom: 14px; max-width: 70ch; }
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px 22px;
+  margin-bottom: 18px;
+}
+
+.card h3 { font-size: 1.12rem; }
+
+.badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-family: Consolas, "Courier New", monospace;
+  color: var(--bg);
+  background: var(--accent);
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.dates {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  font-family: Consolas, "Courier New", monospace;
+  margin: 4px 0 10px;
+}
+
+.card ul { padding-left: 20px; }
+.card li { margin-bottom: 6px; }
+
+.tags {
+  margin-top: 12px;
+  color: var(--accent-dim);
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.82rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.skills-grid > div {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+
+.skills-grid h3 {
+  font-size: 0.95rem;
+  color: var(--accent);
+  font-family: Consolas, "Courier New", monospace;
+  margin-bottom: 6px;
+}
+
+.skills-grid p { color: var(--text); font-size: 0.92rem; }
+
+.cert-list { list-style: none; }
+
+.cert-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.cert-list li:last-child { border-bottom: none; }
+
+#contact a { color: var(--link); text-decoration: none; }
+#contact a:hover { text-decoration: underline; }
+
+footer {
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+  padding: 24px;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .hero { padding: 48px 20px 36px; }
+  .hero h1 { font-size: 2rem; }
+}
