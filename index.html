@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Westly Benton — Cybersecurity Portfolio</title>
+  <meta name="description" content="Portfolio of Westly Benton — cybersecurity student focused on penetration testing, ethical hacking, and network administration.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <p class="prompt">wes@portfolio:~$ whoami</p>
+    <h1>Westly Benton</h1>
+    <p class="tagline">Cybersecurity Student &mdash; Penetration Testing &middot; Ethical Hacking &middot; Network Administration</p>
+    <p class="meta">A.S. Cybersecurity &amp; Network Systems &middot; Valencia College &middot; Graduating July 2026</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#labs">Labs &amp; Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2><span class="hash">#</span> About</h2>
+      <p>
+        I'm a cybersecurity student graduating in July 2026, focused on offensive security:
+        penetration testing, ethical hacking, and security operations. I learn by building —
+        multi-VM Active Directory and Linux lab environments where I practice compromising
+        domains end-to-end, cracking password hashes, and performing digital forensics.
+        I also use Python and AI/LLM workflows to automate security tasks like log analysis.
+      </p>
+      <p>
+        Dean's List &middot; Cybersecurity Club &middot; Hackathon Participant &middot; Volunteer IT Support
+      </p>
+    </section>
+
+    <section id="labs">
+      <h2><span class="hash">#</span> Labs &amp; Projects</h2>
+
+      <article class="card">
+        <h3>Active Directory Penetration Test — 4-VM Windows Domain <span class="badge">Capstone</span></h3>
+        <p class="dates">2025&ndash;2026</p>
+        <ul>
+          <li>Compromised a four-VM Active Directory domain from a Parrot OS attack box, chaining enumeration, exploitation, and post-exploitation to full domain access.</li>
+          <li>Exploited EternalBlue (MS17-010), performed AS-REP roasting, ran LLMNR/NBT-NS poisoning with Responder, and carried out password spraying.</li>
+          <li>Captured and cracked NTLM and Kerberos hashes offline with Hashcat (GPU-accelerated, RTX 5080).</li>
+          <li>Wrote a full penetration test report in Offensive Security format — findings, impact, remediation.</li>
+        </ul>
+        <p class="tags">Parrot OS &middot; Metasploit &middot; Responder &middot; Hashcat &middot; Active Directory</p>
+      </article>
+
+      <article class="card">
+        <h3>CTF Forensics &amp; Password Cracking</h3>
+        <p class="dates">2025&ndash;2026</p>
+        <ul>
+          <li>Completed a multi-stage capture-the-flag forensics challenge: Linux reconnaissance and evidence recovery.</li>
+          <li>Cracked user password hashes with John the Ripper and recovered credentials from captured files.</li>
+          <li>Extracted hidden data from images with steganography tools and decoded layered ciphers to retrieve flags.</li>
+        </ul>
+        <p class="tags">John the Ripper &middot; Steganography &middot; Linux &middot; Digital Forensics</p>
+      </article>
+
+      <article class="card">
+        <h3>Windows Server 2022 Active Directory Lab — 5-VM Domain</h3>
+        <p class="dates">2025&ndash;2026</p>
+        <ul>
+          <li>Designed and deployed a five-VM Windows Server 2022 domain (AD DS, DNS) supporting 40+ users across multiple OUs.</li>
+          <li>Configured DHCP, File Services with shared folders and NTFS permissions, and an IIS web server.</li>
+          <li>Authored and linked Group Policy Objects to enforce security and operational baselines.</li>
+        </ul>
+        <p class="tags">Windows Server 2022 &middot; AD DS &middot; DNS &middot; DHCP &middot; Group Policy</p>
+      </article>
+
+      <article class="card">
+        <h3>VMware Cybersecurity Home Lab — Windows &amp; Linux</h3>
+        <p class="dates">2023&ndash;2026</p>
+        <ul>
+          <li>Maintain a multi-hypervisor lab (VMware, VirtualBox) running Windows and Linux — Kali, Parrot, Ubuntu, Red Hat.</li>
+          <li>Administer and harden Linux systems: SSH, users/groups, permissions, cron jobs, baseline hardening.</li>
+          <li>Run vulnerability scans with Nmap and OpenVAS; analyze Event Viewer and syslog for failed logins and suspicious activity; practice incident response.</li>
+        </ul>
+        <p class="tags">VMware &middot; Kali &middot; Nmap &middot; OpenVAS &middot; Incident Response</p>
+      </article>
+
+      <article class="card">
+        <h3>AI &amp; Security Automation — Python</h3>
+        <p class="dates">2024&ndash;2026</p>
+        <ul>
+          <li>Built a Python CLI tool integrating an LLM API to parse authentication logs and flag suspicious IPs by frequency and time window.</li>
+          <li>Developed Python utilities for hashing workflows — generating and verifying MD5/SHA values from the command line.</li>
+          <li>Automated security data processing with LLM APIs, cutting manual log review time.</li>
+        </ul>
+        <p class="tags">Python &middot; LLM APIs &middot; Log Analysis &middot; Automation</p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2><span class="hash">#</span> Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Operating Systems</h3>
+          <p>Windows, Windows Server 2022, macOS, Linux (Kali, Ubuntu, Red Hat, Parrot OS)</p>
+        </div>
+        <div>
+          <h3>Cybersecurity</h3>
+          <p>Vulnerability scanning, log analysis, system hardening, AD management, incident response, password cracking, digital forensics, steganography</p>
+        </div>
+        <div>
+          <h3>Networking</h3>
+          <p>DHCP, DNS, TCP/IP, VLANs, Wireshark</p>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <p>VMware, VirtualBox, Nmap, OpenVAS, Wireshark, Burp Suite, Metasploit, Hashcat, John the Ripper, Responder</p>
+        </div>
+        <div>
+          <h3>Programming</h3>
+          <p>Python, Bash, basic JavaScript</p>
+        </div>
+        <div>
+          <h3>AI Tools</h3>
+          <p>LLM workflows, API integration, prompt engineering</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certs">
+      <h2><span class="hash">#</span> Certifications</h2>
+      <ul class="cert-list">
+        <li>Microsoft AZ-800 — Administering Windows Server Hybrid Core Infrastructure</li>
+        <li>Cisco Networking</li>
+        <li>Ops Support &amp; Servers</li>
+        <li>Computer Information Data Specialist</li>
+        <li>Microsoft Excel</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2><span class="hash">#</span> Contact</h2>
+      <p>
+        <a href="mailto:westlybenton02@gmail.com">westlybenton02@gmail.com</a><br>
+        <a href="https://github.com/westlybenton02-design">github.com/westlybenton02-design</a><br>
+        Orlando, FL
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Westly Benton &middot; Built for CGS 2650 &middot; Work in progress — more labs coming.</p>
+  </footer>
+
+</body>
+</html>
